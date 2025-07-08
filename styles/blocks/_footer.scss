@@ -13,9 +13,30 @@
     align-items: start;
     column-gap: fluid(80, 20);
 
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(40);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(20);
+    }
+
     &-column {
       display: grid;
       row-gap: fluid(36, 16);
+      &:last-child {
+        @include tablet {
+          grid-column: -1 / 1;
+
+          .footer__menu-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: rem(12);
+          }
+        }
+      }
     }
 
     &-main-link {
@@ -45,6 +66,12 @@
       padding-block: rem(24);
     }
 
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(20);
+      padding-block: rem(24);
+    }
+
     &-menu {
       &-list {
         display: flex;
@@ -56,6 +83,11 @@
           margin-inline: rem(11);
         }
       }
+    }
+  }
+  &__soc1ials {
+    @include mobile {
+      order: -1;
     }
   }
 }
