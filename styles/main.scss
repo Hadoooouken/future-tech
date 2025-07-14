@@ -15,11 +15,11 @@
 
 @use 'blocks/metrics';
 @use 'blocks/team';
-@use 'blocks/resources_review';
+@use 'blocks/resources-preview';
 @use 'blocks/advantage-card';
 @use 'blocks/hero';
 
 .header,
 .footer {
-    display: none !important;
+  display: none !important;
 }
