@@ -95,13 +95,11 @@
     &-list {
       border-block: var(--border);
 
-          @include tablet-above {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      @include tablet-above {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
-    }
-
-
 
     &-item {
       --paddingX: #{rem(80)};
