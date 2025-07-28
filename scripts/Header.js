@@ -19,11 +19,7 @@ class Header {
 
     bindEvents() {
         this.burgerButtonElement.addEventListener('click', this.onBurgerButtonClick)
-        document.addEventListener('keydown', (evt) => {
-            if (evt.key === 'Escape') {
-                this.closeMenu()
-            }
-        })
+
         this.overlayElement.addEventListener('click', (evt) => {
             if (evt.target === evt.currentTarget) {
                 this.closeMenu()
@@ -46,9 +42,6 @@ class Header {
 
 
 export default Header
-
-
-
 
 // const header = document.querySelector('.header');
 // const headerOverlay = document.querySelector('.header__overlay');

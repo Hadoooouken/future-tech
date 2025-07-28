@@ -1386,12 +1386,4 @@ button[aria-label]::before {
   .blog-card__link {
     grid-area: link;
   }
-}
-
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
